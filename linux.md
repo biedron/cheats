@@ -1,6 +1,8 @@
 # Linux cheat sheet  
 ## Find .git repos  
-`$ find / -name ".git"`
+```
+$ find / -name ".git"
+```
 
 ## Browse git history
 ```
@@ -10,7 +12,9 @@ $ git log -p
 $ git log --reflog
 ```
 ## SSH to remote  
-`$ ssh -p 1337 username@host`  
+```
+$ ssh -p 1337 username@host
+```  
 
 ## Remote files copy
 ```
@@ -19,4 +23,6 @@ $ scp -r /path/to/local/dir user@remotehost:/path/to/remote/dir
 $ scp -r username@from_host:/remote/directory/  /local/directory/
 ```
 ## Default ssh keys
-`~/.ssh/id_rsa.pub and ~/.ssh/id_rsa`
+```
+~/.ssh/id_rsa.pub and ~/.ssh/id_rsa
+```
