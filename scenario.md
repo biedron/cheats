@@ -1,4 +1,4 @@
-#Cheklista
+# Cheklista
 
 ### Ogólne
 - [ ] zmiana hasla root na stacji
