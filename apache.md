@@ -2,24 +2,36 @@
 
 ## Enable apache worker | event mod
 Check which module is running  
-`apachectl -V | grep -i mpm`
+```
+apachectl -V | grep -i mpm
+```
 
 
 List Available MPM Modules  
-`ls /etc/apache2/mods-available/mpm*`
+```
+ls /etc/apache2/mods-available/mpm*
+```
 
 Stop apache  
-`systemctl stop apache2`
+```
+systemctl stop apache2
+```
 
 Disable MPM_PREFORK module  
-`a2dismod mpm_prefork`
+```
+a2dismod mpm_prefork
+```
 
 Enable MPM_WORKER or MPM_EVENT module  
-`a2enmod mpm_worker | mpm_event`
+```
+a2enmod mpm_worker | mpm_event
+```
 
 ## Configuring MPM
 Apache configuration  
-`/etc/httpd/conf/httpd.conf` or `/etc/apache2/apache2.conf`
+```
+/etc/httpd/conf/httpd.conf` or `/etc/apache2/apache2.conf
+```
 ```
 <IfModule mpm_worker_module>
     StartServers         2
@@ -44,6 +56,8 @@ Apache configuration
 </IfModule>
 ```
 Verify config  
-`apachectl configtest`
+```
+apachectl configtest
+```
 
 
