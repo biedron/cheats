@@ -30,7 +30,7 @@ a2enmod mpm_worker | mpm_event
 ## Configuring MPM
 Apache configuration  
 ```
-/etc/httpd/conf/httpd.conf` or `/etc/apache2/apache2.conf
+/etc/httpd/conf/httpd.conf | /etc/apache2/apache2.conf
 ```
 ```
 <IfModule mpm_worker_module>
